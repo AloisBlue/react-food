@@ -1,6 +1,17 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
-class Landing extends React.Component{
+// import images
+import main1 from '../img/main1.jpg';
+import dec from '../img/dec.jpg';
+import dec2 from '../img/dec2.jpg';
+import dec3 from '../img/dec3.jpg';
+import dec4 from '../img/dec4.jpg';
+import dec5 from '../img/dec5.jpg';
+import dec6 from '../img/dec6.jpg';
+import dec7 from '../img/dec7.jpg';
+
+class Landing extends React.Component {
 	state = {}
 	render() {
 	return(
@@ -12,7 +23,7 @@ class Landing extends React.Component{
 
         </div>
         <div class="slider" id="slider">
-            <img src="./img/main1.jpg" alt="main1" width="1200" height="250">
+            <img src={main1} alt="main1" width="1200" height="250">
             </img>
         </div>
         <div class="banner" align="right">
@@ -21,25 +32,25 @@ class Landing extends React.Component{
         <div class="topnav">
           <nav>
             <ul class="nav">
-                <li><a href="index.html" class="active">Welcome</a></li>
-                <li><a href="./html/order.html">Orders</a></li>
-                <li><a href="./html/menu.html">Menu</a></li>
-                <li><a href="./html/admin.html">Admin</a></li>
-                <li class="righter"><a href="./html/signup.html">Sign Up</a></li>
+                <li><Link to="/" class="active">Welcome</Link></li>
+                <li><Link to="/orders">Orders</Link></li>
+                <li><Link to="/menu">Menu</Link></li>
+                <li><Link to="/admin">Admin</Link></li>
+                <li class="righter"><Link to="/signup">Sign Up</Link></li>
                 <li class="righter" id="or"><p>or</p></li>
-                <li class="righter"><a href="./html/login.html">Login</a></li>
+                <li class="righter"><Link to="/login">Login</Link></li>
             </ul>
           </nav>
         </div>
         <div class="subbanner" align="center">
-          <li><img src="./img/dec.jpg" height="100" width="130" alt="" />          </li>
-    	    <li><img src="./img/dec2.jpg" height="100" width="130" alt="" /></li>
-          <li><img src="./img/dec3.jpg" height="100" width="130" alt="" /></li>
-          <li><img src="./img/dec4.jpg" height="100" width="130" alt="" /></li>
-          <li><img src="./img/dec5.jpg" height="100" width="130" alt="" /></li>
-          <li><img src="./img/dec6.jpg" height="100" width="130" alt="" /></li>
-          <li><img src="./img/dec7.jpg" height="100" width="130" alt="" /></li>
-          <li><img src="./img/dec2.jpg" height="100" width="130" alt="" /></li>
+          <li><img src={dec} height="100" width="130" alt="" />          </li>
+    	    <li><img src={dec2} height="100" width="130" alt="" /></li>
+          <li><img src={dec3} height="100" width="130" alt="" /></li>
+          <li><img src={dec4} height="100" width="130" alt="" /></li>
+          <li><img src={dec5} height="100" width="130" alt="" /></li>
+          <li><img src={dec6} height="100" width="130" alt="" /></li>
+          <li><img src={dec7} height="100" width="130" alt="" /></li>
+          <li><img src={dec2} height="100" width="130" alt="" /></li>
         </div>
         <div class="content-left">
           <h1>Welcome to Food Fast Food Sellers</h1>
